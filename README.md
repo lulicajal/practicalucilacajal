@@ -5,6 +5,8 @@ BORRADOR: RESPUESTA 5
 
 <h2 id="Respuestas_informativas">Respuestas informativas</h2>
 
+Indican el estado de la solicitud, y en caso de corresponder, si se debe realizar una siguiente acción. Pueden ser las siguientes: 
+
 <dl>
  <li><code>100 Continue</code>
  <dd>Esta respuesta provisional indica que todo hasta ahora está bien y que el cliente debe continuar con la solicitud o ignorarla si ya está terminada.</dd>
@@ -13,38 +15,45 @@ BORRADOR: RESPUESTA 5
  <li><code>102 Processing</code>
  <dd>Este código indica que el servidor ha recibido la solicitud y aún se encuentra procesandola, por lo que no hay respuesta disponible.</dd>
   <li><code>103 Early Hints</code>
- <dd>Este código de estado está pensado principalmente para ser usado con el encabezado {{HTTPHeader("Link")}}, permitiendo que el agente de usuario empiece a <a href="/en-US/docs/Web/HTML/Preloading_content">pre-cargar</a> recursos mientras el servidor prepara una respuesta.</dd>
+ <dd>Este código de estado está pensado principalmente para ser usado con el encabezado {{HTTPHeader("Link")}}, permitiendo que el agente de usuario empiece a pre-cargar recursos mientras el servidor prepara una respuesta.</dd>
 </dl>
 
 <h2 id="Respuestas_satisfactorias">Respuestas satisfactorias</h2>
 
-<ul>
- <li><code><span class="hidden"> </span><span class="hidden"> </span><span class="hidden"> </span><span class="hidden"> </span>GET</code>: El recurso se ha obtenido y se transmite en el cuerpo del mensaje.</li>
- <li><code>HEAD</code>: Los encabezados de entidad están en el cuerpo del mensaje.</li>
- <li><code>PUT</code> o <code>POST</code>: El recurso que describe el resultado de la acción se transmite en el cuerpo del mensaje.</li>
- <li><code>TRACE</code>: El cuerpo del mensaje contiene el mensaje de solicitud recibido por el servidor.<span class="hidden"> </span><span class="hidden"> </span><span class="hidden"> </span><span class="hidden"> </span></li>
-</ul>
+Indica que la petición fue recibida correctamente, entendida y aceptada.
+
+Tipos de verbos HTTP que utilizan generalmente:
+
+`GET`: El recurso se ha obtenido y se transmite en el cuerpo del mensaje.</li>
+
+`HEAD`: Los encabezados de entidad están en el cuerpo del mensaje.
+
+`PUT`: El recurso que describe el resultado de la acción se transmite en el cuerpo del mensaje.</li>
+
+`TRACE`: El cuerpo del mensaje contiene el mensaje de solicitud recibido por el servidor.<span class="hidden"> </span><span class="hidden"> </span><span class="hidden"> </span><span class="hidden"> </span></li>
+
+Las respuestas pueden ser las siguientes:
 
 <dl>
- <dt>{{HTTPStatus(200, "200 OK")}}</dt>
+  <li><code>200 OK</code>
  <dd>La solicitud ha tenido éxito. El significado de un éxito varía dependiendo del método HTTP:</dd>
- <dt>{{HTTPStatus(201, "201 Created")}}</dt>
+  <li><code>201 Created</code>
  <dd>La solicitud ha tenido éxito y se ha creado un nuevo recurso como resultado de ello. Ésta es típicamente la respuesta enviada después de una petición PUT.</dd>
- <dt>{{HTTPStatus(202, "202 Accepted")}}</dt>
+ <li><code>202 Accepted</code>
  <dd>La solicitud se ha recibido, pero aún no se ha actuado. Es una petición "sin compromiso", lo que significa que no hay manera en HTTP que permite enviar una respuesta asíncrona que indique el resultado del procesamiento de la solicitud. Está pensado para los casos en que otro proceso o servidor maneja la solicitud, o para el procesamiento por lotes.</dd>
- <dt>{{HTTPStatus(203, "203 Non-Authoritative Information")}}</dt>
+ <li><code>203 Non-Authoritative Information</code>
  <dd>La petición se ha completado con éxito, pero su contenido no se ha obtenido de la fuente originalmente solicitada, sino que se recoge de una copia local o de un tercero. Excepto esta condición, se debe preferir una respuesta de 200 OK en lugar de esta respuesta.</dd>
- <dt>{{HTTPStatus(204, "204 No Content")}}</dt>
+  <li><code>204 No Content</code>
  <dd>La petición se ha completado con éxito pero su respuesta no tiene ningún contenido, aunque los encabezados pueden ser útiles. El agente de usuario puede actualizar sus encabezados en caché para este recurso con los nuevos valores.</dd>
- <dt>{{HTTPStatus(205, "205 Reset Content")}}</dt>
+ <li><code>205 Reset Content</code>
  <dd>La petición se ha completado con éxito, pero su respuesta no tiene contenidos y además, el agente de usuario tiene que inicializar la página desde la que se realizó la petición, este código es útil por ejemplo para páginas con formularios cuyo contenido debe borrarse después de que el usuario lo envíe.</dd>
- <dt>{{HTTPStatus(206, "206 Partial Content")}}</dt>
+ <li><code>206 Partial Content</code>
  <dd>La petición servirá parcialmente el contenido solicitado. Esta característica es utilizada por herramientas de descarga como wget para continuar la transferencia de descargas anteriormente interrumpidas, o para dividir una descarga y procesar las partes simultáneamente.</dd>
- <dt>{{HTTPStatus(207, "207 Multi-Status")}} ({{Glossary("WebDAV")}})</dt>
+ <li><code>207 Multi-Status</code>
  <dd>Una respuesta Multi-Estado transmite información sobre varios recursos en situaciones en las que varios códigos de estado podrían ser apropiados. El cuerpo de la petición es un mensaje XML.</dd>
- <dt>{{HTTPStatus(208, "208 Multi-Status")}} ({{Glossary("WebDAV")}})</dt>
+ <li><code>208 Multi-Status</code>
  <dd>El listado de elementos DAV ya se notificó previamente, por lo que no se van a volver a listar.</dd>
- <dt>{{HTTPStatus(226, "226 IM Used")}} (<a href="https://tools.ietf.org/html/rfc3229">HTTP Delta encoding</a>)</dt>
+ <li><code>226 IM Used</code>
  <dd>El servidor ha cumplido una petición <code>GET</code> para el recurso y la respuesta es una representación del resultado de una o más manipulaciones de instancia aplicadas a la instancia actual.</dd>
 </dl>
 
