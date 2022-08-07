@@ -60,43 +60,42 @@ Las respuestas pueden ser las siguientes:
 <h2 id="Redirecciones">Redirecciones</h2>
 
 <dl>
- <dt>{{HTTPStatus(300, "300 Multiple Choice")}}</dt>
+ <li><code>300 Multiple Choice</code>
  <dd>Esta solicitud tiene más de una posible respuesta. User-Agent o el usuario debe escoger uno de ellos. No hay forma estandarizada de seleccionar una de las respuestas.</dd>
- <dt>{{HTTPStatus(301, "301 Moved Permanently")}}</dt>
+ <li><code>301 Moved Permanently</code>
  <dd>Este código de respuesta significa que la URI  del recurso solicitado ha sido cambiado. Probablemente una nueva URI sea devuelta en la respuesta.</dd>
- <dt>{{HTTPStatus(302, "302 Found")}}</dt>
+ <li><code>302 Found</code>
  <dd>Este código de respuesta significa que el recurso de la URI solicitada ha sido cambiado temporalmente. Nuevos cambios en la URI serán agregados en el futuro. Por lo tanto, la misma URI debe ser usada por el cliente en futuras solicitudes.</dd>
  <dd></dd>
- <dt>{{HTTPStatus(303, "303 See Other")}}</dt>
+ <li><code>303 See Other</code> 
  <dd>El servidor envía esta respuesta para dirigir al cliente a un nuevo recurso solicitado a otra dirección usando una petición GET.</dd>
- <dt>{{HTTPStatus(304, "304 Not Modified")}}</dt>
+ <li><code>304 Not Modified</code>
  <dd>Esta es usada para propósitos de "caché". Le indica al cliente que la respuesta no ha sido modificada. Entonces, el cliente puede continuar usando la misma versión almacenada en su caché.</dd>
- <dt><code>305 Use Proxy</code> {{deprecated_inline}}</dt>
+ <li><code>305 Use Proxy</code> 
  <dd>Fue definida en una versión previa de la especificación del protocolo HTTP para indicar que una respuesta solicitada debe ser accedida desde un proxy. Ha quedado obsoleta debido a preocupaciones de seguridad correspondientes a la configuración de un proxy.</dd>
- <dt><code>306 unused</code></dt>
- <dt></dt>
+ <li><code>306 unused</code>
  <dd>Este código de respuesta ya no es usado más. Actualmente se encuentra reservado. Fue usado en previas versiones de la especificación HTTP1.1.</dd>
- <dt>{{HTTPStatus(307, "307 Temporary Redirect")}}</dt>
+ <li><code>307 Temporary Redirect</code>
  <dd>El servidor envía esta respuesta para dirigir al cliente a obtener el recurso solicitado a otra URI con el mismo método que se usó la petición anterior. Tiene la misma semántica que el código de respuesta HTTP <code>302 Found</code>, con la excepción de que el agente usuario <em>no debe</em> cambiar el método HTTP usado: si un <code>POST</code> fue usado en la primera petición, otro <code>POST</code> debe ser usado en la segunda petición.</dd>
 </dl>
 
 <dl>
- <dt>{{HTTPStatus(308, "308 Permanent Redirect")}}</dt>
+ <li><code>308 Permanent Redirect</code>
  <dd>Significa que el recurso ahora se encuentra permanentemente en otra URI, especificada por la respuesta de encabezado HTTP <code>Location:</code>. Tiene la misma semántica que el código de respuesta HTTP <code>301 Moved Permanently</code>, con la excepción de que el agente usuario <em>no debe</em> cambiar el método HTTP usado: si un <code>POST</code> fue usado en la primera petición, otro <code>POST</code> debe ser usado en la segunda petición.</dd>
 </dl>
 
 <h2 id="Errores_de_cliente">Errores de cliente</h2>
 
 <dl>
- <dt>{{HTTPStatus(400, "400 Bad Request")}}</dt>
+ <li><code>400 Bad Request</code>
  <dd>Esta respuesta significa que el servidor no pudo interpretar la solicitud dada una sintaxis inválida.</dd>
- <dt>{{HTTPStatus(401, "401 Unauthorized")}}</dt>
+ <li><code>401 Unauthorized</code> 
  <dd>Es necesario autenticar para obtener la respuesta solicitada. Esta es similar a 403, pero en este caso, la autenticación es posible.</dd>
- <dt><code>402 Payment Required</code></dt>
+ <li><code>402 Payment Required</code>
  <dd>Este código de respuesta está reservado para futuros usos. El objetivo inicial de crear este código fue para ser utilizado en sistemas digitales de pagos. Sin embargo, no está siendo usado actualmente.</dd>
- <dt>{{HTTPStatus(403, "403 Forbidden")}}</dt>
+ <li><code>403 Forbidden</code>
  <dd>El cliente no posee los permisos necesarios para cierto contenido, por lo que el servidor está rechazando otorgar una respuesta apropiada.</dd>
- <dt>{{HTTPStatus(404, "404 Not Found")}}</dt>
+ <li><code>404 Not Found</code> 
  <dd>El servidor no pudo encontrar el contenido solicitado. Este código de respuesta es uno de los más famosos dada su alta ocurrencia en la web.</dd>
  <dt>{{HTTPStatus(405, "405 Method Not Allowed")}}</dt>
  <dd>El método solicitado es conocido por el servidor pero ha sido deshabilitado y no puede ser utilizado. Los dos métodos obligatorios, <code>GET</code> y <code>HEAD</code>, nunca deben ser deshabilitados y no deberían retornar este código de error.</dd>
