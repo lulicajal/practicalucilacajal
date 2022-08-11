@@ -1,6 +1,10 @@
 ### *Salesforce Consultant*
 #  `Evalución práctica` - Lucila Belén Cajal
 
+Ejercicio 4: 
+
+Link de Trailhead: https://trailblazer.me/id/lcajal1
+
 BORRADOR: RESPUESTA 5 
 
 <h2 id="Respuestas_informativas">Respuestas informativas</h2>
