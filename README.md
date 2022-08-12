@@ -291,7 +291,7 @@ El formato XML soporta diferentes tipos de datos, entre ellos: imágenes y gráf
 ```
 { 
 
->"persons": [ 
+"persons": [ 
       { 
             "name": "Ford Prefect", 
             "gender": "male" 
