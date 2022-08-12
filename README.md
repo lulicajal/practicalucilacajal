@@ -352,7 +352,7 @@ La diferencia entre las llamadas 1 y 3: la última a pesar de ser exactamente ig
 ***
 # *Ejercicio 4*
 
-Todos los módulos solicitados fueron debitamente completos y realizados en el PlayGround llamado PROCONTACTO. A excepción del módulo "Modelado de datos" que ya había resolvido anteriormente. 
+Todos los módulos solicitados fueron debitamente completos y realizados en el PlayGround llamado PROCONTACTO. A excepción del módulo "Modelado de datos" que ya había resuelto anteriormente. 
 
 Link de Trailhead: https://trailblazer.me/id/lcajal1
 
