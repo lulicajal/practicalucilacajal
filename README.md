@@ -62,11 +62,11 @@ Indican el estado de la solicitud, y en caso de corresponder, si se debe realiza
  <li><code>100 Continue</code>
  <dd>Esta respuesta provisional indica que todo hasta ahora está bien y que el cliente debe continuar con la solicitud o ignorarla si ya está terminada.</dd>
  <li><code>101 Switching Protocol</code>
- <dd>Este código se envía en respuesta a un encabezado de solicitud {{HTTPHeader("Upgrade")}} por el cliente e indica que el servidor acepta el cambio de protocolo propuesto por el agente de usuario.</dd>
+ <dd>Este código se envía en respuesta a un encabezado de solicitud por el cliente e indica que el servidor acepta el cambio de protocolo propuesto por el agente de usuario.</dd>
  <li><code>102 Processing</code>
  <dd>Este código indica que el servidor ha recibido la solicitud y aún se encuentra procesandola, por lo que no hay respuesta disponible.</dd>
   <li><code>103 Early Hints</code>
- <dd>Este código de estado está pensado principalmente para ser usado con el encabezado {{HTTPHeader("Link")}}, permitiendo que el agente de usuario empiece a pre-cargar recursos mientras el servidor prepara una respuesta.</dd>
+ <dd>Este código de estado está pensado principalmente para ser usado con el encabezado, permitiendo que el agente de usuario empiece a pre-cargar recursos mientras el servidor prepara una respuesta.</dd>
 </dl>
 
 <h3 id="Respuestas_satisfactorias">Respuestas satisfactorias</h3>
