@@ -633,6 +633,9 @@ No. Salesforce contiene un sistema que permite planificar recursos empresariales
 # *Ejercicio 7*
 
 En la carpeta del repositorio llamada Ejercicio 7, se detalla con imágenes el paso a paso realizado para la importación del archivo CSV. 
+Como el archivo recibido era .XLSX primero realicé el cambio de formato a .CSV (separado por comas)
+
+Ya luego en el proceso: 
 
 Primero, fui agregando los objetos personalizados que vi que existían en el CSV (Imágenes bajo el nombre de "Objetos personalizados").
 
