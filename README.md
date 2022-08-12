@@ -254,7 +254,7 @@ JSON usa una notación simple, mientras que el XML usa una estructura de tags pe
 El formato XML soporta diferentes tipos de datos, entre ellos: imágenes y gráficos, lo que no es posible transmitir en el formato JSON, dado que este último solo ofrece soporte a números y textos.
 
 
-*EJEMPLO DE JERARQUIZACIÓN DE DATOS EN XML*
+*Ejemplo de jerarquización de datos en XML*
 
 ```
 <Person> 
@@ -286,7 +286,7 @@ El formato XML soporta diferentes tipos de datos, entre ellos: imágenes y gráf
 </Person>
 ```
 
-*MISMO EJEMPLO EN JSON*
+*Mismo ejemplo en JSON*
 
 ```
 { 
