@@ -592,7 +592,7 @@ Un funnel de ventas es el esquema que representa las etapas del proceso que pasa
 
 Customer Experience significa “Experiencia del Cliente”, así mismo definimos que son las percepciones de un cliente después de interactuar racional, física, emocional y/o psicológicamente con cualquier parte de una empresa.
 
-## H.	¿Qué significa omnicanalidad?
+### H.	¿Qué significa omnicanalidad?
 
 La omnicanalidad es la estrategia de comunicación utilizada para estar en contacto con los clientes a través de diferentes canales (email, redes sociales, sitio web, etc.). El uso de los diferentes canales debe hacerse bajo una misma estrategia para llegar al consumidor en el momento indicado.
 
