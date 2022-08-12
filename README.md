@@ -400,21 +400,21 @@ d.	Descuento: Descuento del producto como porcentaje.
 
 e.	Autor de la última modificación: El último usuario que ha realizado una modificación en los campos del producto de oportunidad.
 
-g.	Descripción de partida: Texto para distinguir este producto de oportunidad de otro.
+f.	Descripción de partida: Texto para distinguir este producto de oportunidad de otro.
 
-i.	Precio de la lista:Precio del producto dentro de la lista de precios, incluida la divisa.
+g.	Precio de la lista:Precio del producto dentro de la lista de precios, incluida la divisa.
 
-k.	Oportunidad:	Nombre de la oportunidad para este producto de oportunidad.
+h.	Oportunidad:	Nombre de la oportunidad para este producto de oportunidad.
 
-m.	Producto:	Elemento incluido en la lista relacionada Productos de una oportunidad.
+i.	Producto:	Elemento incluido en la lista relacionada Productos de una oportunidad.
 
-o.	Cantidad:	Número de unidades del producto de la oportunidad.
+m.	Cantidad:	Número de unidades del producto de la oportunidad.
 
-q.	Precio de venta:	Precio de los productos en el producto de oportunidad. En un producto de oportunidad sin una programación relacionada, el precio de venta es modificable. 
+n.	Precio de venta:	Precio de los productos en el producto de oportunidad. En un producto de oportunidad sin una programación relacionada, el precio de venta es modificable. 
 
-s.	Subtotal:	Diferencia entre el precio estándar y el precio de descuento. Cantidades de divisa convertida si la divisa de la oportunidad es diferente de la divisa del usuario.
+o.	Subtotal:	Diferencia entre el precio estándar y el precio de descuento. Cantidades de divisa convertida si la divisa de la oportunidad es diferente de la divisa del usuario.
 
-u.	Precio total:	Suma de todas las cantidades de producto para un producto de oportunidad. 
+p.	Precio total:	Suma de todas las cantidades de producto para un producto de oportunidad. 
 
 
 ### •	PriceBook:
