@@ -151,7 +151,7 @@ Las respuestas pueden ser las siguientes:
  <li><code>405 Method Not Allowed</code> 
  <dd>El método solicitado es conocido por el servidor pero ha sido deshabilitado y no puede ser utilizado. Los dos métodos obligatorios, <code>GET</code> y <code>HEAD</code>, nunca deben ser deshabilitados y no deberían retornar este código de error.</dd>
  <li><code>406 Not Acceptable</code> 
- <dd>Esta respuesta es enviada cuando el servidor, después de aplicar una <a href="/en-US/docs/HTTP/Content_negotiation#Server-driven_negotiation">negociación de contenido servidor-impulsado</a>, no encuentra ningún contenido seguido por la criteria dada por el usuario.</dd>
+ <dd>Esta respuesta es enviada cuando el servidor, no encuentra ningún contenido seguido por la criteria dada por el usuario.</dd>
  <li><code>407 Proxy Authentication Required</code> 
  <dd>Esto es similar al código 401, pero la autenticación debe estar hecha a partir de un proxy.</dd>
  <li><code>408 Request Timeout</code>  
