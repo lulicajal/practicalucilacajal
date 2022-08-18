@@ -56,7 +56,9 @@ Los posibles valores de respuesta podrían agruparse en:
 
 <h3 id="Respuestas_informativas">Respuestas informativas</h3> 
 
-Indican el estado de la solicitud, y en caso de corresponder, si se debe realizar una siguiente acción. Pueden ser las siguientes: 
+Indican el estado de la solicitud, y en caso de corresponder, si se debe realizar una siguiente acción. 
+
+Pueden ser las siguientes: 
 
 <dl>
  <li><code>100 Continue</code>
