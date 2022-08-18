@@ -345,7 +345,7 @@ En un response, informa al cliente sobre el tipo de contenido devuelto. El naveg
 
 # *Ejercicio 3*
 
-En el repositorio, hay 3 imágenes identificadas como "Ejercicio 3", las cuales muestran los screenshoot de cada resolución. 
+En el repositorio, hay 3 imágenes identificadas como "Ejercicio 3", las cuales muestran los screenshot de cada resolución. 
 
 La diferencia entre las llamadas 1 y 3: la última a pesar de ser exactamente igual a la primera, el resultado fue obtenido más rápido. Puede verse reflejado en la parte de *TIME*.
 
