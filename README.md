@@ -110,7 +110,7 @@ Las respuestas pueden ser las siguientes:
 
 <h3 id="Redirecciones">Redirecciones</h3>
 
-Indica que el cliente debe tomar una acción adicional para completar la petición.
+Indica que el cliente debe tomar una acción adicional para completar la petición. Pueden ser las siguientes:
 
 <dl>
  <li><code>300 Multiple Choice</code>
@@ -139,7 +139,7 @@ Indica que el cliente debe tomar una acción adicional para completar la petici�
 
 <h3 id="Errores_de_cliente">Errores de cliente</h3>
 
-Indica que la solicitud contiene una sintaxis incorrecta o no puede procesarse
+Indica que la solicitud contiene una sintaxis incorrecta o no puede procesarse. Pueden ser las siguientes:
 
 <dl>
  <li><code>400 Bad Request</code>
@@ -202,7 +202,7 @@ Indica que la solicitud contiene una sintaxis incorrecta o no puede procesarse
 
 <h3 id="Errores_de_servidor">Errores de servidor</h3>
 
-Indica que el servidor falló al completar una solicitud aparentemente válida.
+Indica que el servidor falló al completar una solicitud aparentemente válida. Pueden ser las siguientes:
 
 <dl>
   <li><code>500 Internal Server Error</code>  
