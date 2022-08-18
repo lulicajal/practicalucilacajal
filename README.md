@@ -110,6 +110,8 @@ Las respuestas pueden ser las siguientes:
 
 <h3 id="Redirecciones">Redirecciones</h3>
 
+Indica que el cliente debe tomar una acción adicional para completar la petición.
+
 <dl>
  <li><code>300 Multiple Choice</code>
  <dd>Esta solicitud tiene más de una posible respuesta. User-Agent o el usuario debe escoger uno de ellos. No hay forma estandarizada de seleccionar una de las respuestas.</dd>
@@ -136,6 +138,8 @@ Las respuestas pueden ser las siguientes:
 </dl>
 
 <h3 id="Errores_de_cliente">Errores de cliente</h3>
+
+Indica que la solicitud contiene una sintaxis incorrecta o no puede procesarse
 
 <dl>
  <li><code>400 Bad Request</code>
@@ -197,6 +201,8 @@ Las respuestas pueden ser las siguientes:
 </dl>
 
 <h3 id="Errores_de_servidor">Errores de servidor</h3>
+
+Indica que el servidor falló al completar una solicitud aparentemente válida.
 
 <dl>
   <li><code>500 Internal Server Error</code>  
